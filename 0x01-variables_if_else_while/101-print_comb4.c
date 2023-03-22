@@ -4,7 +4,7 @@
  * main - prints all possible different combinations of three digits
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	int i, j, k;
 	for (i = 0; i <= 9; i++)
@@ -16,8 +16,16 @@ int main()
 							putchar(i + '0');
 							putchar(j + '0');
 							putchar(k + '0');
+<<<<<<< HEAD
 							putchar(',');
 							putchar(' ');	
+=======
+							if (i != 7 || j != 8 || k != 9) 
+								{
+									putchar(',');
+									putchar(' ');
+								}
+>>>>>>> ee819a6d8d9f55f581ab41ff5777dcf3f950e31d
 						}
 				}
 		}
